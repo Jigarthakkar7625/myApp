@@ -3,16 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ // Components, Directives, Pipes
+    AppComponent, 
+    HeaderComponent,
+    FooterComponent
   ],
-  imports: [
+  imports: [ // packages/modules
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [], // Services
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// HR, User, Sales, Admin, SuperAdmin
+
+// main.ts > app.module.ts
